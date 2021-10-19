@@ -1,0 +1,288 @@
+.dave-background {
+  height: 100vh !important;
+  width: 100%;
+  /* max-width: 1440px; */
+  background-position: top right;
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  max-height: 757px !important;
+  max-width: 1440px;
+  position: relative;
+}
+
+.dave-background-inner {
+  position: absolute;
+  background-position: top right;
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  height: 100vh !important;
+  max-height: 757px !important;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.dave-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dave-list-icons img {
+  position: absolute;
+}
+
+.dave-list-icons img:nth-child(1) {
+  top: 257px;
+  left: 585px;
+}
+
+.dave-list-icons img:nth-child(2) {
+  top: 201px;
+  left: 356px;
+}
+
+.dave-list-icons img:nth-child(3) {
+  top: 387px;
+  left: 595px;
+}
+
+.dave-list-icons img:nth-child(4) {
+  top: 537px;
+  left: 475px;
+}
+
+.dave-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 634px;
+  height: 602px;
+  width: 100%;
+}
+
+.dave-name {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  width: 188px;
+  border-right: 0.15em solid #000c24; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.dave-name h3 {
+  color: #ffffff;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: #000c24;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+.dave-seat {
+  position: relative;
+  width: 100%;
+  max-width: 546px;
+  height: 428px;
+}
+
+.scroll {
+  position: relative;
+}
+
+.dave-spreadBg {
+  position: absolute;
+  /* z-index: 1000; */
+  width: 100%;
+  max-width: 837px;
+  top: 320px;
+}
+
+.dave-about {
+  position: relative;
+  /* top: 810px; */
+  margin-left: 120px;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+  column-gap: 25px; */
+}
+
+.david-img {
+  width: 100%;
+  max-width: 425px;
+  height: auto;
+}
+
+.dave-about-article {
+  padding-top: 54px;
+}
+
+.dave-heading {
+  /* font-family: Spartan; */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 36px;
+  color: #f44336;
+}
+
+.dave-paragraph {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 170%;
+  color: #000c24;
+}
+
+.dave-btn a {
+  background-color: #000c24;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 15px 32px;
+  text-decoration: none;
+}
+
+.dave-btn a:hover {
+  background-color: rgba(146, 138, 151, 1);
+}
+
+.blue-splash {
+  position: absolute;
+  margin-left: 412px;
+  margin-top: 890px;
+}
+
+.salyman-img {
+  display: flex;
+  align-items: center;
+}
+
+.salyman-img img {
+  position: relative;
+  padding-left: 9px;
+  width: 100%;
+  max-width: 476px;
+  height: auto;
+}
+
+.skills {
+  padding-left: 120px;
+  position: relative;
+}
+
+.laptop {
+  width: 100%;
+  max-width: 455px;
+  height: auto;
+}
+
+.footer-bg {
+  /* height: 816px; */
+  width: 100%;
+  max-width: 1440px;
+}
+
+.dave-footer {
+  padding: 5% 5%;
+}
+
+.footer-contact {
+  background-color: #ffffff;
+  /* height: 486px; */
+}
+
+.footer-drop-line {
+  /* font-family: Spartan; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 46px;
+  color: #000c24;
+}
+
+.footer-contact-input h2 {
+  color: #f44336;
+  padding-bottom: 12px;
+  /* font-family: Spartan; */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.footer-contact-input input,
+.footer-contact-input textarea {
+  width: 100%;
+  max-width: 602px;
+  padding: 12px 10px;
+}
+
+.footer-bg2 {
+  /* height: 217px; */
+  width: 100%;
+}
+
+.footer-social {
+  color: #ffffff;
+}
+
+.footer-social h4 {
+  /* font-family: Spartan; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.footer-text {
+  /* font-family: Spartan; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.dave-header-list{
+  margin-left: 65px;
+  /* padding: 25px 0; */
+}
+
+.dave-header-list ul li {
+  /* margin-right: 46px !important; */
+  width: 150px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 17px;
+  color: #fefefe;
+  padding: 25px 0;
+  /* filter: drop-shadow(0px 5px 7px rgba(0, 0, 0, 0.25)); */
+  cursor: pointer;
+}
+
+/* .dave-header-list ul li:last-child {
+  margin-right: 15px !important;
+} */
+
+.dave-header-list ul li:hover {
+  color: #f44336;
+  background-image: url("../../assets/images/whiteBg.svg");
+  padding-top: 40px;
+}
+
+.list-inline a{
+  text-decoration: none;
+}

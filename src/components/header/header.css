@@ -1,0 +1,10 @@
+#dave-header {
+    padding: 0 3.5%;
+    background-color: transparent;
+    height: var(--nav-height);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1440px;
+    z-index: 1000;
+}
