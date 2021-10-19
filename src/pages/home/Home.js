@@ -20,7 +20,7 @@ import linkedin from "../../assets/images/linkedin.svg";
 import instagram from "../../assets/images/instagram.svg";
 import copyright from "../../assets/images/copyright.svg";
 import love from "../../assets/images/loveImg.svg";
-import blueySplash from "../../assets/images/blueySplash.svg";
+// import blueySplash from "../../assets/images/blueySplash.svg";
 
 const Home = () => {
   return (
@@ -30,32 +30,52 @@ const Home = () => {
         style={{ background: `url(${backgroundOne})` }}
       >
         <div className="dave-background-inner">
-        <div className="dave-header-list">
-          <ul className="list-inline m-0 d-flex align-items-center">
-            <a href="#" ><li className="list-inline-item d-flex align-items-center justify-content-center">Home</li></a>
-            <a href="#about" ><li className="list-inline-item d-flex align-items-center justify-content-center">About</li></a>
-            <a href="#skills" ><li className="list-inline-item d-flex align-items-center justify-content-center">Skills</li></a>
-            <a href="#works" ><li className="list-inline-item d-flex align-items-center justify-content-center">Works</li></a>
-            <a href="#contact" ><li className="list-inline-item d-flex align-items-center justify-content-center">Contact</li></a>
-          </ul>
-        </div>
-        <div className="row d-flex flex-wrap align-items-center">
-          <article className="col-md-8">
-            <article
-              className="dave-circle"
-              style={{
-                background: `url(${circleBg})`,
-              }}
-            >
-              <div className="dave-name">
-                <h3>Hi, I'm David</h3>
-              </div>
+          <div className="dave-header-list">
+            <ul className="list-inline m-0 d-flex align-items-center">
+              <a href="/">
+                <li className="list-inline-item d-flex align-items-center justify-content-center">
+                  Home
+                </li>
+              </a>
+              <a href="#about">
+                <li className="list-inline-item d-flex align-items-center justify-content-center">
+                  About
+                </li>
+              </a>
+              <a href="#skills">
+                <li className="list-inline-item d-flex align-items-center justify-content-center">
+                  Skills
+                </li>
+              </a>
+              <a href="#works">
+                <li className="list-inline-item d-flex align-items-center justify-content-center">
+                  Works
+                </li>
+              </a>
+              <a href="#contact">
+                <li className="list-inline-item d-flex align-items-center justify-content-center">
+                  Contact
+                </li>
+              </a>
+            </ul>
+          </div>
+          <div className="row d-flex flex-wrap align-items-center">
+            <article className="col-md-8">
+              <article
+                className="dave-circle"
+                style={{
+                  background: `url(${circleBg})`,
+                }}
+              >
+                <div className="dave-name">
+                  <h3>Hi, I'm David</h3>
+                </div>
+              </article>
             </article>
-          </article>
-          <article className="col-md-4">
-            <img className="dave-seat" src={daveSeat} alt="David" />
-          </article>
-        </div>
+            <article className="col-md-4">
+              <img className="dave-seat" src={daveSeat} alt="David" />
+            </article>
+          </div>
         </div>
       </section>
 
@@ -118,7 +138,11 @@ const Home = () => {
         </article>
       </section>
 
-      <section id="contact" className="footer-bg" style={{ background: `url(${footerBg})` }}>
+      <section
+        id="contact"
+        className="footer-bg"
+        style={{ background: `url(${footerBg})` }}
+      >
         <div className="dave-footer">
           <article className="footer-contact row">
             <div className="col-md-5 d-flex justify-content-center align-items-center">
@@ -146,7 +170,7 @@ const Home = () => {
 
                 <div className="dave-btn pb-4">
                   <a
-                    href=""
+                    href="/"
                     download="resume"
                     target="_blank"
                     rel="noopener noreferrer"
