@@ -2,7 +2,8 @@
   height: 100vh !important;
   width: 100%;
   /* max-width: 1440px; */
-  background-position: top right;
+  background: url("../../assets/images/background0ne.png");
+  background-position: top;
   background-repeat: no-repeat !important;
   background-size: cover;
   max-height: 757px !important;
@@ -25,6 +26,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.dave-home {
+  margin: 0% 8%;
 }
 
 .dave-list-icons img {
@@ -52,9 +57,14 @@
 }
 
 .dave-circle {
+  background: url("../../assets/images/circleBg.svg");
+  background-position: top left;
+  background-repeat: no-repeat !important;
+  background-size: cover;
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
+  padding: 0 15%;
   max-width: 634px;
   height: 602px;
   width: 100%;
@@ -63,16 +73,31 @@
 .dave-name {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   width: 188px;
-  border-right: 0.15em solid #000c24; /* The typwriter cursor */
+  /* border-right: 0.15em solid #252791; The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  /* animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; */
+  z-index: inherit;
 }
 
 .dave-name h3 {
   color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 36px;
 }
+
+.dave-circle h4 {
+  color: #F44336;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0;
+}
+
 
 @keyframes typing {
   from {
@@ -104,7 +129,7 @@
 
 .dave-spreadBg {
   position: absolute;
-  /* z-index: 1000; */
+  z-index: -1;
   width: 100%;
   max-width: 837px;
   top: 320px;
@@ -112,8 +137,9 @@
 
 .dave-about {
   position: relative;
+  margin: 0% 8%;
   /* top: 810px; */
-  margin-left: 120px;
+  /* margin-left: 120px; */
   /* display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
   column-gap: 25px; */
@@ -146,15 +172,18 @@
   color: #000c24;
 }
 
-.dave-btn a {
+.dave-btn a,
+.dave-btn button {
   background-color: #000c24;
   border-radius: 4px;
   color: #ffffff;
   padding: 15px 32px;
   text-decoration: none;
+  border: none;
 }
 
-.dave-btn a:hover {
+.dave-btn a:hover,
+.dave-btn button:hover {
   background-color: rgba(146, 138, 151, 1);
 }
 
@@ -178,8 +207,13 @@
 }
 
 .skills {
-  padding-left: 120px;
+  margin: 0% 8%;
   position: relative;
+}
+
+.skills-progress {
+  display: flex;
+  gap: 35px;
 }
 
 .laptop {
@@ -255,8 +289,9 @@
   line-height: 16px;
   color: #ffffff;
 }
-.dave-header-list{
+.dave-header-list {
   margin-left: 65px;
+  display: block;
   /* padding: 25px 0; */
 }
 
@@ -283,6 +318,128 @@
   padding-top: 40px;
 }
 
-.list-inline a{
+.list-inline a {
   text-decoration: none;
+}
+.hams {
+  display: none;
+}
+
+.hams div {
+  background-color: white;
+  height: 3px;
+  width: 24px;
+}
+
+.hams div:nth-child(2) {
+  margin: 3px 0;
+}
+
+.open_top {
+  transform: rotate(0deg);
+  transition: all 0.5s ease;
+}
+
+.open_middle {
+  transform: rotate(0deg);
+  transition: all 0.5s ease;
+}
+
+.open_bottom {
+  opacity: 1;
+  transition: all 0.5s linear;
+}
+
+.close_top {
+  transform: translate(0, 6px) rotate(45deg);
+  transition: all 0.5s ease;
+}
+
+.close_bottom {
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+.close_middle {
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+}
+
+.mobile-title {
+  display: none;
+}
+
+.dave-alert {
+  color: red;
+  margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .skills-progress {
+    gap: 1px;
+  }
+  
+  .dave-header-list {
+    margin: 0;
+    /* position: fixed; */
+  }
+  /* .hams {
+    display: block;
+    position: absolute;
+  }
+
+  .mobile-title {
+    display: block;
+    position: absolute;
+  }
+
+  .mobile-header {
+    display: flex;
+    justify-content: flex-end;
+  } */
+
+  .dave-header-list ul li {
+    width: 75px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+    color: #fefefe;
+    padding: 25px 0;
+    cursor: pointer;
+  }
+
+  /* .dave-header-list ul li:last-child {
+    margin-right: 15px !important;
+  } */
+
+  .dave-header-list ul li:hover {
+    color: #f44336;
+    background-image: url("../../assets/images/whiteBg.svg");
+    width: 100%;
+    padding-top: 40px;
+  }
+
+  .list-inline a {
+    text-decoration: none;
+  }
+
+  .dave-list-icons img:nth-child(1) {
+    top: 178px;
+    left: 289px;
+  }
+
+  .dave-list-icons img:nth-child(2) {
+    top: 123px;
+    left: 234px;
+  }
+
+  .dave-list-icons img:nth-child(3) {
+    top: 287px;
+    left: 297px;
+  }
+
+  .dave-list-icons img:nth-child(4) {
+    top: 345px;
+    left: 237px;
+  }
 }
