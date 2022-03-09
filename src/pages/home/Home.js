@@ -70,7 +70,7 @@ const Home = () => {
     }
   };
 
-  const reactPercentage = 55;
+  // const reactPercentage = 55;
 
   return (
     <div>
