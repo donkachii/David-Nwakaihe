@@ -117,11 +117,11 @@ const Home = () => {
                           onInit={(typewriter) => {
                             typewriter
 
-                              .typeString("<span>Kachi</span>")
+                              .typeString("<span>David</span>")
 
                               .pauseFor(2000)
                               .deleteAll()
-                              .typeString("<span>David</span>")
+                              .typeString("<span>Onyekachi</span>")
                               .start();
                           }}
                         />
@@ -153,7 +153,7 @@ const Home = () => {
             </div>
           </div>
           <div className="mobile-title">
-            <h4>David's Portfolio</h4>
+            <h4>Onyekachi's Portfolio</h4>
           </div>
           <section
             className="hams"
@@ -190,10 +190,13 @@ const Home = () => {
         <article className="dave-about-article col-md-7">
           <h3 className="dave-heading">About Me</h3>
           <p className="dave-paragraph pb-3 d-flex justify-content-center">
-            A graduate of Computer Science (B.SC.) and a web developer skilled
-            in leadership, team work and seeking to leverage solid development
-            skills with focus on collaboration, communication, passion and open
-            to work.
+            I am a Software Engineer with 1+ years of experience, building
+            software solutions. Proficient in a range of modern technologies
+            including JavaScript, ReactJS, SQL, Python, and PHP. <br /> Ardent
+            researcher and online trainee to further develop skills and
+            knowledge of multiple data and software engineering, websites, and
+            web applications, and passionate about software development and a
+            developing interest in psychology.
           </p>
           <div className="dave-btn">
             <a
@@ -219,11 +222,10 @@ const Home = () => {
         <article className="col-md-7">
           <h3 className="dave-heading">Skills</h3>
           <p className="dave-paragraph pb-3">
-            I enjoy not just writing codes but creating things that live on the
-            web, whether that be websites, applications, or anything in between.
-            I have a vast knowlegde of javascript, react, bootstrap and nodejs.
+            React, JavaScript, Redux, Database (SQL, MySQL, Postgres), NodeJS,
+            Python, Java Programming, Php
           </p>
-          <div className="skills-progress">
+          {/* <div className="skills-progress">
             <div style={{ width: 100, height: 124 }}>
               <CircularProgressbar
                 value={reactPercentage}
@@ -324,10 +326,11 @@ const Home = () => {
               />
               <p className="text-center mt-1">Javascript</p>
             </div>
-          </div>
+          </div> */}
           <img
             className="scroll mt-5"
             src={scroll}
+            role="button"
             alt="scroll"
             width="68px"
             height="25px"
@@ -336,6 +339,11 @@ const Home = () => {
         <article className="col-md-5">
           <img className="laptop" src={laptopImg} alt="laptop" />
         </article>
+      </section>
+
+      {/* Develop for projects here */}
+      <section>
+        
       </section>
 
       <section
