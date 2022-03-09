@@ -21,8 +21,8 @@ import love from "../../assets/images/loveImg.svg";
 import resume from "../../assets/docs/resume.pdf";
 import emailjs from "emailjs-com";
 import Typewriter from "typewriter-effect";
-import { CircularProgressbar } from "react-circular-progressbar";
-import "react-circular-progressbar/dist/styles.css";
+// import { CircularProgressbar } from "react-circular-progressbar";
+// import "react-circular-progressbar/dist/styles.css";
 // import blueySplash from "../../assets/images/blueySplash.svg";
 
 const Home = () => {
