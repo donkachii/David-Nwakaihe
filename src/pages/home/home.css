@@ -1,12 +1,15 @@
+/* 1rem is 16px */
+
 .dave-background {
-  height: 100vh !important;
+  padding-top: 3rem;
+  height: 100vh;
   width: 100%;
   /* max-width: 1440px; */
-  background: url("../../assets/images/background0ne.png");
+  background: url("../../assets/images/backgroundOne.png");
   background-position: top;
-  background-repeat: no-repeat !important;
+  background-repeat: no-repeat;
   background-size: cover;
-  max-height: 757px !important;
+  /* max-height: 757px !important; */
   max-width: 1440px;
   position: relative;
 }
@@ -14,11 +17,10 @@
 .dave-background-inner {
   position: absolute;
   background-position: top right;
-  background-repeat: no-repeat !important;
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh !important;
-  max-height: 757px !important;
-  max-width: 1440px;
+  height: 100vh;
+  /* max-width: 1440px; */
   width: 100%;
 }
 
@@ -57,28 +59,18 @@
 }
 
 .dave-circle {
-  background: url("../../assets/images/circleBg.svg");
-  background-position: top left;
-  background-repeat: no-repeat !important;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  /* justify-content: center; */
   padding: 0 15%;
   max-width: 634px;
-  height: 602px;
   width: 100%;
 }
 
 .dave-name {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  overflow: hidden; 
   /* width: 188px; */
   /* border-right: 0.15em solid #252791; The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
-  /* animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; */
+  letter-spacing: 0.15em;
   z-index: inherit;
 }
 
@@ -86,19 +78,18 @@
   color: #ffffff;
   font-style: normal;
   font-weight: bold;
-  font-size: 28px;
-  line-height: 36px;
+  font-size: 18px;
+  /* line-height: 36px; */
 }
 
 .dave-circle h4 {
-  color: #F44336;
+  color: #f44336;
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 20px;
+  /* line-height: 36px; */
   margin: 0;
 }
-
 
 @keyframes typing {
   from {
@@ -137,8 +128,8 @@
 }
 
 .dave-about {
-  position: relative;
-  margin: 0% 8%;
+  padding: 0% 8%;
+  padding-bottom: 14%;
   /* top: 810px; */
   /* margin-left: 120px; */
   /* display: grid;
@@ -147,8 +138,8 @@
 }
 
 .david-img {
-  width: 100%;
-  max-width: 425px;
+  width: 60%;
+  /* max-width: 425px; */
   height: auto;
 }
 
@@ -166,9 +157,7 @@
 }
 
 .dave-paragraph {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
+  font-size: 1rem;
   line-height: 170%;
   color: #000c24;
 }
@@ -194,179 +183,15 @@
   margin-top: 890px;
 }
 
-.salyman-img {
-  display: flex;
-  align-items: center;
-}
-
-.salyman-img img {
-  position: relative;
-  padding-left: 9px;
-  width: 100%;
-  max-width: 476px;
-  height: auto;
-}
-
 .skills {
-  margin: 0% 8%;
+  padding: 0% 8%;
+  padding-bottom: 4%;
   position: relative;
-}
-
-.skills-progress {
-  display: flex;
-  gap: 35px;
 }
 
 .laptop {
-  width: 100%;
-  max-width: 455px;
+  width: 60%;
   height: auto;
-}
-
-.footer-bg {
-  /* height: 816px; */
-  width: 100%;
-  max-width: 1440px;
-}
-
-.dave-footer {
-  padding: 5% 5%;
-}
-
-.footer-contact {
-  background-color: #ffffff;
-  /* height: 486px; */
-}
-
-.footer-drop-line {
-  /* font-family: Spartan; */
-  font-style: normal;
-  font-weight: 600;
-  font-size: 38px;
-  line-height: 46px;
-  color: #000c24;
-}
-
-.footer-contact-input h2 {
-  color: #f44336;
-  padding-bottom: 12px;
-  /* font-family: Spartan; */
-  font-style: normal;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 36px;
-}
-
-.footer-contact-input input,
-.footer-contact-input textarea {
-  width: 100%;
-  max-width: 602px;
-  padding: 12px 10px;
-}
-
-.footer-bg2 {
-  /* height: 217px; */
-  width: 100%;
-}
-
-.footer-social {
-  color: #ffffff;
-}
-
-.footer-social h4 {
-  /* font-family: Spartan; */
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 20px;
-  color: #ffffff;
-}
-
-.footer-text {
-  /* font-family: Spartan; */
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  color: #ffffff;
-}
-.dave-header-list {
-  margin-left: 65px;
-  display: block;
-  /* padding: 25px 0; */
-}
-
-.dave-header-list ul li {
-  /* margin-right: 46px !important; */
-  width: 150px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 17px;
-  color: #fefefe;
-  padding: 25px 0;
-  /* filter: drop-shadow(0px 5px 7px rgba(0, 0, 0, 0.25)); */
-  cursor: pointer;
-}
-
-/* .dave-header-list ul li:last-child {
-  margin-right: 15px !important;
-} */
-
-.dave-header-list ul li:hover {
-  color: #f44336;
-  background-image: url("../../assets/images/whiteBg.svg");
-  padding-top: 40px;
-}
-
-.list-inline a {
-  text-decoration: none;
-}
-.hams {
-  display: none;
-}
-
-.hams div {
-  background-color: white;
-  height: 3px;
-  width: 24px;
-}
-
-.hams div:nth-child(2) {
-  margin: 3px 0;
-}
-
-.open_top {
-  transform: rotate(0deg);
-  transition: all 0.5s ease;
-}
-
-.open_middle {
-  transform: rotate(0deg);
-  transition: all 0.5s ease;
-}
-
-.open_bottom {
-  opacity: 1;
-  transition: all 0.5s linear;
-}
-
-.close_top {
-  transform: translate(0, 6px) rotate(45deg);
-  transition: all 0.5s ease;
-}
-
-.close_bottom {
-  opacity: 0;
-  transition: all 0.5s linear;
-}
-.close_middle {
-  transform: rotate(-45deg);
-  transition: all 0.5s ease;
-}
-
-.mobile-title {
-  display: none;
 }
 
 .dave-alert {
@@ -374,15 +199,51 @@
   margin: 0;
 }
 
+/* For Tabs and Desktop */
+@media screen and (min-width: 500px) {
+  .dave-circle {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 15%;
+    max-width: 634px;
+    height: 602px;
+    width: 100%;
+  }
+
+  .dave-background {
+    height: 80vh;
+    padding-top: 0;
+  }
+
+  .dave-background-inner {
+    height: 80vh; 
+  }
+
+  .dave-name h3 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  
+  .dave-circle h4 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .dave-about {
+    padding-bottom: 8%;
+  }
+
+}
+
+@media screen and (max-width: 460px) {
+}
+
 @media screen and (max-width: 700px) {
   .skills-progress {
     gap: 1px;
   }
-  
-  .dave-header-list {
-    margin: 0;
-    /* position: fixed; */
-  }
+
   /* .hams {
     display: block;
     position: absolute;
@@ -398,31 +259,10 @@
     justify-content: flex-end;
   } */
 
-  .dave-header-list ul li {
-    width: 75px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 17px;
-    color: #fefefe;
-    padding: 25px 0;
-    cursor: pointer;
-  }
 
   /* .dave-header-list ul li:last-child {
     margin-right: 15px !important;
   } */
-
-  .dave-header-list ul li:hover {
-    color: #f44336;
-    background-image: url("../../assets/images/whiteBg.svg");
-    width: 100%;
-    padding-top: 40px;
-  }
-
-  .list-inline a {
-    text-decoration: none;
-  }
 
   .dave-list-icons img:nth-child(1) {
     top: 178px;

@@ -1,0 +1,60 @@
+.footer-bg {
+  width: 100%;
+}
+.dave-footer {
+  padding: 5% 5%;
+}
+
+.footer-contact {
+  background-color: #ffffff;
+  /* height: 486px; */
+}
+
+.footer-drop-line {
+  /* font-family: Spartan; */
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 46px;
+  color: #000c24;
+}
+
+.footer-contact-input h2 {
+  color: #f44336;
+  padding-bottom: 12px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.footer-contact-input input,
+.footer-contact-input textarea {
+  width: 100%;
+  max-width: 602px;
+  padding: 12px 10px;
+}
+
+.footer-bg2 {
+  /* height: 217px; */
+  width: 100%;
+}
+
+.footer-social {
+  color: #ffffff;
+}
+
+.footer-social h4 {
+  /* font-family: Spartan; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.footer-text {
+  /* font-family: Spartan; */
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}

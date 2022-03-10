@@ -1,10 +1,120 @@
 #dave-header {
-    padding: 0 3.5%;
-    background-color: transparent;
-    height: var(--nav-height);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    max-width: 1440px;
-    z-index: 1000;
+  padding: 0 3.5%;
+  background-color: transparent;
+  height: var(--nav-height);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1440px;
+  z-index: 1000;
+}
+
+.dave-header-list {
+  margin: 0;
+  position: fixed;
+  background: transparent;
+  z-index: 100;
+}
+
+.dave-header-list ul li {
+  width: 75px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 17px;
+  color: #fefefe;
+  padding: 25px 0;
+  cursor: pointer;
+}
+
+.dave-header-list ul li:hover {
+  color: #f44336;
+  background-image: url("../../assets/images/whiteBg.svg");
+}
+
+.list-inline a {
+  text-decoration: none;
+  display: none;
+}
+.hams {
+  display: block;
+}
+
+.hams div {
+  background-color: white;
+  height: 3px;
+  width: 24px;
+}
+
+.hams div:nth-child(2) {
+  margin: 3px 0;
+}
+
+.open_top {
+  transform: rotate(0deg);
+  transition: all 0.5s ease;
+}
+
+.open_middle {
+  transform: rotate(0deg);
+  transition: all 0.5s ease;
+}
+
+.open_bottom {
+  opacity: 1;
+  transition: all 0.5s linear;
+}
+
+.close_top {
+  transform: translate(0, 6px) rotate(45deg);
+  transition: all 0.5s ease;
+}
+
+.close_bottom {
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+.close_middle {
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 460px) {
+  .dave-header-list {
+    padding: 4%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .dave-header-list {
+    margin-left: 65px;
+    display: block;
+    /* padding: 25px 0; */
+  }
+
+  .dave-header-list ul li {
+    /* margin-right: 46px !important; */
+    width: 150px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 17px;
+    color: #fefefe;
+    padding: 25px 0;
+    /* filter: drop-shadow(0px 5px 7px rgba(0, 0, 0, 0.25)); */
+    cursor: pointer;
+  }
+
+  /* .dave-header-list ul li a:hover {
+    color: #f44336;
+  } */
+
+  .list-inline a {
+    text-decoration: none;
+    display: block;
+  }
+
+  .hams {
+    display: none;
+  }
 }
