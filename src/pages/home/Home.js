@@ -15,7 +15,7 @@ import WelcomeModal from "../../components/welcomeModal/WelcomeModal";
 // import { CircularProgressbar } from "react-circular-progressbar";
 // import "react-circular-progressbar/dist/styles.css";
 // import blueySplash from "../../assets/images/blueySplash.svg";
-require('dotenv').config();
+require("dotenv").config();
 
 const Home = () => {
   const [toSend, setToSend] = useState({
@@ -77,8 +77,10 @@ const Home = () => {
   }, [username]);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    if (!show) {
+      window.scrollTo(0, 0);
+    }
+  }, [show]);
 
   const handleNameClick = () => {
     setUsername(name);
@@ -97,7 +99,7 @@ const Home = () => {
     getDate = "Good Evening!";
   }
 
-  console.log(process.env.REACT_APP_API_KEY)
+  console.log(process.env.REACT_APP_API_KEY);
 
   return (
     <div>
