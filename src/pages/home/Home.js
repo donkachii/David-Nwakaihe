@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import "./home.css";
 import daveSeat from "../../assets/images/daveSeat.svg";
 import spreadBg from "../../assets/images/spreadBg.png";
@@ -10,6 +10,8 @@ import Typewriter from "typewriter-effect";
 import { socials } from "../../data.js";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
+import { UserContext } from "../../UserContext";
+import WelcomeModal from "../../components/welcomeModal/WelcomeModal";
 // import { CircularProgressbar } from "react-circular-progressbar";
 // import "react-circular-progressbar/dist/styles.css";
 // import blueySplash from "../../assets/images/blueySplash.svg";
@@ -23,6 +25,8 @@ const Home = () => {
   });
   const [alert, setAlert] = useState("");
   const [maillError, setMailError] = useState("");
+  const [show, setShow] = useState(false);
+  const [name, setName] = useState(false);
 
   const handleChange = (e) => {
     setAlert("");
@@ -41,7 +45,7 @@ const Home = () => {
     } else {
       emailjs
         .send(
-          "service_wmur7jp",
+          "service_m001b3e",
           "template_axck0qk",
           toSend,
           "user_P44BZM072O8sqshl5W1Zf"
@@ -59,19 +63,58 @@ const Home = () => {
     }
   };
 
+  const { username, setUsername } = useContext(UserContext);
+
+  // console.log(username);
+
   // const reactPercentage = 55;
+
+  useEffect(() => {
+    if (username === "") {
+      setShow(true);
+    }
+  }, [username]);
+
+  const handleNameClick = () => {
+    setUsername(name);
+    setShow(false);
+  };
+
+  let getDate;
+
+  const day = new Date();
+  const hr = day.getHours();
+  if (hr >= 0 && hr < 12) {
+    getDate = "Good Morning!";
+  } else if (hr >= 12 && hr <= 17) {
+    getDate = "Good Afternoon!";
+  } else {
+    getDate = "Good Evening!";
+  }
+
+  // console.log(getDate)
 
   return (
     <div>
+      <WelcomeModal
+        show={show}
+        setName={setName}
+        handleNameClick={handleNameClick}
+      />
       <Header />
       <section className="dave-background mx-0">
         <div className="dave-background-inner mobile-header">
+          {username && (
+            <h3 className="welcome-text">
+              {getDate} {username}
+            </h3>
+          )}
           <div className="row d-flex flex-wrap align-items-center px-2 m-0">
             <article className="col-md-8">
               <article className="dave-circle">
                 <section>
                   <div className="dave-name">
-                    <h3 className="d-flex" style={{ gap: 6 }}>
+                    <h3 className="d-flex justify-content-center" style={{ gap: 6 }}>
                       Hi, I'm{" "}
                       <Typewriter
                         onInit={(typewriter) => {
@@ -88,7 +131,7 @@ const Home = () => {
                     </h3>
                   </div>
                   <div>
-                    <h4>Software Engineer</h4>
+                    <h4>Software Developer</h4>
                   </div>
                   <div className="d-flex justify-content-center py-4">
                     {socials.map((s) => (
@@ -130,13 +173,22 @@ const Home = () => {
         <article className="dave-about-article col-md-8">
           <h3 className="dave-heading">About Me</h3>
           <p className="dave-paragraph pb-3 d-flex justify-content-center">
-            I am a Software Engineer with 1+ years of experience, building
+            {/* I am a Software Engineer with 1+ years of experience, building
             software solutions. Proficient in a range of modern technologies
             including JavaScript, ReactJS, SQL, Python, and PHP. <br /> Ardent
             researcher and online trainee to further develop skills and
             knowledge of multiple data and software engineering, websites, and
             web applications, and passionate about software development and a
-            developing interest in psychology.
+            developing interest in psychology. */}
+            Experienced Web Developer adept in all stages of advanced web
+            development. Knowledgeable in user interface, testing, and debugging
+            processes. Bringing forth expertise in design, installation,
+            testing, and maintenance of web systems. <br /> Equipped with a
+            diverse and promising skill-set. Proficient in an assortment of
+            technologies, including JavaScript, React]S, Node]S, PostgreSQL,
+            Python, and PHP. Able to effectively self-manage during independent
+            projects, as well as collaborate in a team setting. <br /> I am
+            seeking a challenging career with a progressive organization.
           </p>
           <div className="dave-btn">
             <a
@@ -162,8 +214,7 @@ const Home = () => {
         <article className="col-md-7">
           <h3 className="dave-heading">Skills</h3>
           <p className="dave-paragraph pb-3">
-            React, JavaScript, Redux, Database (SQL, MySQL, Postgres), NodeJS,
-            Python, Java Programming, Php
+            JAVASCRIPT, REACTJS, NODEJS, REDUX, HTML5, PYTHON, PHP, JAVA, SQL, CSS, GIT
           </p>
         </article>
         <article className="col-md-5 d-flex justify-content-center">
@@ -178,6 +229,7 @@ const Home = () => {
         handleChange={handleChange}
         handleSubmit={handleSubmit}
         maillError={maillError}
+        username={username}
       />
     </div>
   );

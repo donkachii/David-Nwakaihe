@@ -65,7 +65,7 @@
 }
 
 .dave-name {
-  overflow: hidden; 
+  overflow: hidden;
   /* width: 188px; */
   /* border-right: 0.15em solid #252791; The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -199,6 +199,10 @@
   margin: 0;
 }
 
+.welcome-text {
+  color: bisque;
+}
+
 /* For Tabs and Desktop */
 @media screen and (min-width: 500px) {
   .dave-circle {
@@ -217,14 +221,14 @@
   }
 
   .dave-background-inner {
-    height: 80vh; 
+    height: 80vh;
   }
 
   .dave-name h3 {
     font-size: 28px;
     line-height: 36px;
   }
-  
+
   .dave-circle h4 {
     font-size: 30px;
     line-height: 36px;
@@ -234,6 +238,11 @@
     padding-bottom: 8%;
   }
 
+  .welcome-text {
+    position: absolute;
+    top: 80px;
+    left: 120px;
+  }
 }
 
 @media screen and (max-width: 460px) {
@@ -259,7 +268,6 @@
     justify-content: flex-end;
   } */
 
-
   /* .dave-header-list ul li:last-child {
     margin-right: 15px !important;
   } */
@@ -282,5 +290,16 @@
   .dave-list-icons img:nth-child(4) {
     top: 345px;
     left: 237px;
+  }
+
+  .dave-name, h4 {
+    text-align: center;
+  }
+
+  .welcome-text {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
   }
 }

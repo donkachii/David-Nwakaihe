@@ -1,0 +1,39 @@
+.name-modal {
+}
+
+.name-modal .modal-header {
+  border-bottom: 0;
+}
+
+.name-modal .modal-footer {
+  justify-content: center;
+  border-top: 0;
+}
+
+.name-body article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+}
+
+.name-request {
+  margin: 0;
+}
+
+.name-body article input {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding: 0rem 0.2rem;
+}
+
+.name-btn {
+  border: 1px solid;
+}
+
+@media screen and (max-width: 700px) {
+    .name-request {
+        font-size: 0.75rem;
+    }
+}

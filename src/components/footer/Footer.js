@@ -4,12 +4,17 @@ import footerBg2 from "../../assets/images/footerBG2.svg";
 import copyright from "../../assets/images/copyright.svg";
 import love from "../../assets/images/loveImg.svg";
 import { socials } from "../../data";
-import "./footer.css"
+import "./footer.css";
 
-const Footer = ({ toSend, handleChange, handleSubmit, maillError }) => {
+const Footer = ({
+  toSend,
+  handleChange,
+  handleSubmit,
+  maillError,
+  username,
+}) => {
   return (
     <div>
-      {" "}
       <section
         id="contact"
         className="footer-bg"
@@ -32,7 +37,8 @@ const Footer = ({ toSend, handleChange, handleSubmit, maillError }) => {
                     name="from_name"
                     placeholder="Name"
                     required
-                    value={toSend.from_name}
+                    defaultValue={toSend.from_name || username}
+                    // value={toSend.from_name}
                     onChange={handleChange}
                   />
                 </div>

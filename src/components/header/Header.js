@@ -24,8 +24,8 @@ const Header = () => {
   return (
     <div className="dave-header-list">
       <ul className="list-inline m-0 d-flex align-items-center">
-        {headers.map((nav) => (
-          <a href={nav.href}>
+        {headers.map((nav, i) => (
+          <a href={nav.href} key={i}>
             <li className="list-inline-item d-flex align-items-center justify-content-center">
               {nav.name}
             </li>
