@@ -15,6 +15,7 @@ import WelcomeModal from "../../components/welcomeModal/WelcomeModal";
 // import { CircularProgressbar } from "react-circular-progressbar";
 // import "react-circular-progressbar/dist/styles.css";
 // import blueySplash from "../../assets/images/blueySplash.svg";
+require('dotenv').config();
 
 const Home = () => {
   const [toSend, setToSend] = useState({
@@ -75,6 +76,10 @@ const Home = () => {
     }
   }, [username]);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const handleNameClick = () => {
     setUsername(name);
     setShow(false);
@@ -92,7 +97,7 @@ const Home = () => {
     getDate = "Good Evening!";
   }
 
-  // console.log(getDate)
+  console.log(process.env.REACT_APP_API_KEY)
 
   return (
     <div>
@@ -114,7 +119,10 @@ const Home = () => {
               <article className="dave-circle">
                 <section>
                   <div className="dave-name">
-                    <h3 className="d-flex justify-content-center" style={{ gap: 6 }}>
+                    <h3
+                      className="d-flex justify-content-center"
+                      style={{ gap: 6 }}
+                    >
                       Hi, I'm{" "}
                       <Typewriter
                         onInit={(typewriter) => {
@@ -214,7 +222,8 @@ const Home = () => {
         <article className="col-md-7">
           <h3 className="dave-heading">Skills</h3>
           <p className="dave-paragraph pb-3">
-            JAVASCRIPT, REACTJS, NODEJS, REDUX, HTML5, PYTHON, PHP, JAVA, SQL, CSS, GIT
+            JAVASCRIPT, REACTJS, NODEJS, REDUX, HTML5, PYTHON, PHP, JAVA, SQL,
+            CSS, GIT
           </p>
         </article>
         <article className="col-md-5 d-flex justify-content-center">
