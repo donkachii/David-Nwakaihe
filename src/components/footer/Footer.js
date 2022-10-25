@@ -85,7 +85,12 @@ const Footer = ({
 
               <div className="d-flex justify-content-center py-4">
                 {socials.map((s) => (
-                  <a href={s.link} key={s.name}>
+                  <a
+                    href={s.link}
+                    key={s.name}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <img className="pl-3" src={s.image} alt={s.name} />
                   </a>
                 ))}

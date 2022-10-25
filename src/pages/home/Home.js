@@ -70,10 +70,15 @@ const Home = () => {
 
   // const reactPercentage = 55;
 
+  // console.log(localStorage.getItem("username"));
+
   useEffect(() => {
     if (username === "") {
       setShow(true);
     }
+    // if (localStorage.getItem("username") !== "") {
+    //   setShow(false);
+    // }
   }, [username]);
 
   useEffect(() => {
@@ -83,6 +88,7 @@ const Home = () => {
   }, [show]);
 
   const handleNameClick = () => {
+    localStorage.setItem("username", name);
     setUsername(name);
     setShow(false);
   };

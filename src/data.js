@@ -6,7 +6,11 @@ export const Description = "";
 export const socials = [
   { name: "twitter", link: "https://twitter.com/donkachii", image: twitter },
   { name: "github", link: "https://github.com/donkachii", image: github },
-  { name: "linkedin", link: "https://twitter.com/donkachii", image: linkedin },
+  {
+    name: "linkedin",
+    link: "https://www.linkedin.com/in/onyekachi-nwakaihe-26006b174/",
+    image: linkedin,
+  },
   {
     name: "instagram",
     link: "https://twitter.com/donkachii",
